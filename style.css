@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+}
+
+#recipe-iframe {
+    width: 50vh;
+    height: 50vh;
+    border: solid;
+}
+
+
+.col-5 {
+    background-color: red;
+}
+
+.col-7 {
+    background-color: blue;
+}
+
+.top {
+    background-color: yellow;
+}
