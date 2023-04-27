@@ -2,20 +2,35 @@
   margin: 0;
 }
 
+#mainFrame {
+  height: 96vh;
+  overflow: hidden;
+}
+
 #recipe-iframe {
-  width: 50vh;
-  height: 50vh;
+  width: 100%;
+  height: 100%;
   border: solid;
 }
 
-.col-5 {
+.content {
+  height: 100%;
+  width: 100%;
+}
+
+.cont .col-5 {
   background-color: red;
 }
 
 .col-7 {
+  border: black solid 5px;
   background-color: blue;
 }
 
 .top {
   background-color: yellow;
+}
+
+img {
+  max
 }
