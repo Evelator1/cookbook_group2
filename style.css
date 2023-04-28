@@ -1,22 +1,32 @@
-* {
-    margin: 0;
+body{
+    background: url("https://images.unsplash.com/photo-1533035353720-f1c6a75cd8ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
 }
+
 
 #recipe-iframe {
-    width: 50vh;
-    height: 50vh;
-    border: solid;
+    width: 100%;
+    height: 70rem;
+    /* background-color: transparent;
+    background-color: rgba(0,0,0,0);  */
+    
+}
+select #recipe-list {
+    background-color: transparent;
+    color: #333;
+  }
+
+
+.container-with-space{
+    margin: 100px;
 }
 
 
-.col-5 {
-    background-color: red;
+.container-fluid{
+    background-color: transparent;
+    height: 100%;
 }
 
-.col-7 {
-    background-color: blue;
+#recipe-list{
+    background-color: transparent;
 }
 
-.top {
-    background-color: yellow;
-}
