@@ -34,7 +34,7 @@ hideAll();
 catButtons.forEach(btn => {
   btn.addEventListener('click', function () {
     activeCategory = btn.value;
-    console.log(btn.value);
+    // console.log(btn.value);
   });
 });
 
@@ -56,8 +56,8 @@ function hideRecepies(hide) {
 
 buttons.forEach(btn => {
   btn.addEventListener('click', function () {
-    console.log(btn.value);
-
+    // console.log(btn.value);
+    console.log("sub click");
     hideRecepies(lastSelection);
     subCat = btn.value;
     const activate = activeCategory + subCat;
@@ -71,7 +71,8 @@ buttons.forEach(btn => {
 
 function changeIframe(cat, subCat, value) {
   console.log(cat)
-  const path = "./recepies/" + cat + "/" + subCat + "/" + value;
+  const path = "./Recipes/" + cat + "/" + subCat + "/" + value;
+  console.log(path);
 
   recipeIframe.src = path;
 }
