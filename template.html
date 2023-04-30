@@ -2,38 +2,63 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TITLE</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Title</title>
+  <link rel="stylesheet" href="../../../../css/bootstrap.css">
+  <link rel="stylesheet" href="../../../../css/style.css">
 </head>
 
 <body>
-  <h2>NAME</h2>
-  <h3>Description</h3>
-  <img src="" alt="">
-  <table>
-    <tr>
-      <td>Category</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>serving</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Peptime</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Ingredients</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Instructions</td>
-      <td></td>
-    </tr>
-  </table>
+  <div class="container-fluid bg-success vh-100">
+    <header class="row py-5 bg-body-secondary h-25">
+      <div class="col-12">
+        <h1 class="display-5 fw-bold">NAME</h1>
+        <h3 class="font text-end fst-italic">Description</h3>
+      </div>
+    </header>
+    <div class="row">
+      <div class="col-12 my-3 d-flex justify-content-around">
+        <img class="d-block" src="" alt="Photo eines mediterranen Nudelsalats" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-8 offset-2">
+        <table class="table table-success">
+          <tr>
+            <th class="w-50 text-end mx-2">serving</th>
+            <td>2</td>
+          </tr>
+          <tr>
+            <th class="w-50 text-end mx-2">preptime</th>
+            <td>30 min</td>
+          </tr>
+          <tr>
+            <th class="w-50 text-end mx-2">ingredients</th>
+            <td class="py-0">
+              <table class="table">
+                <tr class="">
+                  <td class="w-10">250g</td>
+                  <td>Nudeln</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Knoblauchzehen</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <th class="w-50 text-end mx-2">instructions</th>
+            <td>
+              <ol></ol>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
