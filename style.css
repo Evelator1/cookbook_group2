@@ -6,7 +6,7 @@ body{
 
 #recipe-iframe {
     width: 100%;
-    height: 70rem;
+    height: 135rem;
     background-color: transparent;
 }
 
@@ -16,15 +16,10 @@ body{
 }
 
 
-.container-fluid{
-    background-color: transparent;
-    /* height: 100%; */
-}
+
 
 #recipe-list{
     background-color: transparent;
 }
 
-.chicken-image{
-    height:10px;
-}
+
