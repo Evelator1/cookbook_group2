@@ -13,31 +13,29 @@
     <div class="container-fluid container-with-space">
 
         <div class="row">
-            <div class="col-3">
-                <div class="row">
-                    <h2>Recipes</h2>
-                    <select class="form-select" name="" id="recipe-list">
-                        <option value="">Select a category</option>
-                            <optgroup label="Salad">
-                                <option value="../Recipes/Salads/mozzarella.html">Mozzarella Salad</option>
-                                <option value="../Recipes/Salads/pasta.html">Pasta Salad</option>
-                            </optgroup>
-
-                            <optgroup label="Spices & more">
-                                <option value="../Recipes/Spices & more/chicken_curry.html">Chicken Curry</option>
-                                <option>Schwarma</option>
-                                <option>Lamb</option>
-                            </optgroup  
-                            <optgroup label="Main Dish">
-                                <option>Steak</option>
-                                <option>Spaghetti</option>
-                            </optgroup>
-                    </select>
-                </div>
+            <div class="col-3 border-right">
+                <h2>Recipes</h2>
+                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example"  name="" id="recipe-list">
+                    <option value="">Select a category</option>
+                        <optgroup label="Salad">
+                            <option value="../Recipes/Salads/mozzarella.html">Mozzarella Salad</option>
+                            <option value="../Recipes/Salads/pasta.html">Pasta Salad</option>
+                        </optgroup>
+                        <optgroup label="Spices & more">
+                            <option value="../Recipes/Spices & more/chicken_curry.html">Chicken Curry</option>
+                            <option>Schwarma</option>
+                            <option>Lamb</option>
+                        </optgroup  
+                        <optgroup label="Main Dish">
+                            <option>Steak</option>
+                            <option>Spaghetti</option>
+                        </optgroup>
+                </select>
+                
             </div>
-            <div class="col-8">
+            <div class="col-8 ">
                 <div class="row content">
-                    <iframe id="recipe-iframe" src=""></iframe>
+                    <iframe class="border-0"   id="recipe-iframe" src=""></iframe>
                 </div>
             </div>
             

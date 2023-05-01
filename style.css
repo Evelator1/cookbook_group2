@@ -1,19 +1,14 @@
 body{
     background: url("https://images.unsplash.com/photo-1533035353720-f1c6a75cd8ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
+    background-position: center;
 }
 
 
 #recipe-iframe {
     width: 100%;
     height: 70rem;
-    /* background-color: transparent;
-    background-color: rgba(0,0,0,0);  */
-    
-}
-select #recipe-list {
     background-color: transparent;
-    color: #333;
-  }
+}
 
 
 .container-with-space{
@@ -23,10 +18,13 @@ select #recipe-list {
 
 .container-fluid{
     background-color: transparent;
-    height: 100%;
+    /* height: 100%; */
 }
 
 #recipe-list{
     background-color: transparent;
 }
 
+.chicken-image{
+    height:10px;
+}
