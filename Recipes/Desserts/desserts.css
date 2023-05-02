@@ -1,0 +1,110 @@
+/* Mousse au Chocolat */
+
+.mousseauchocolat-img {
+  width: 200px;
+  height: auto;
+  border-radius: 5%;
+}
+
+.body-mousseauchocolat {
+  background-image: url(./images/anshu-a--7LeAsLS0FA-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 1200px;
+}
+
+.container1 {
+  margin-top: 15%;
+}
+
+.m-15 {
+  font-family: Pacifico;
+}
+
+/* Panna Cotta */
+
+.body-pannacotta {
+  background-image: url(./images/anshu-a--7LeAsLS0FA-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  font-family: Instrument;
+}
+
+.pannacotta-img {
+  width: 100%;
+  height: auto;
+  border: 5px solid oldlace;
+}
+
+/* Erdbeer */
+
+.erdbeer {
+  position: relative;
+}
+
+.hovtxt {
+  position: relative;
+  bottom: 46%;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.erdbeer:hover .hovtxt {
+  opacity: 1;
+  transition-duration: 1.2s;
+}
+
+.h4-erdbeer {
+  background-color: oldlace;
+  position: relative;
+  max-width: 300px;
+}
+
+/* Schoko */
+
+.schoko {
+  position: relative;
+}
+.h4-schoko {
+  background-color: oldlace;
+  position: relative;
+  max-width: 300px;
+}
+
+.hovtxt1 {
+  position: relative;
+  bottom: 50%;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.schoko:hover .hovtxt1 {
+  opacity: 1;
+  transition-duration: 1.2s;
+}
+
+/* Kokos */
+.kokos {
+  position: relative;
+}
+
+.hovtxt2 {
+  position: relative;
+  bottom: 46%;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.h4-kokos {
+  background-color: oldlace;
+  position: relative;
+  max-width: 300px;
+}
+
+.kokos:hover .hovtxt2 {
+  opacity: 1;
+  transition-duration: 1.2s;
+}
