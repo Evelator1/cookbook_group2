@@ -9,61 +9,80 @@ recipeList.addEventListener('change', function () {
 });
  */
 
+
+// Variables declaration
 const recipeIframe = document.querySelector('#recipeIframe')
 
 let activeCategory = 'meat';
 let subCat = 'soup';
 let lastSelection = activeCategory + subCat;
+let lastRecipeButton = null
+//Category Variables and Consts
+const categoryNav = document.querySelector('#categoryNav');
+const catButtons = categoryNav.querySelectorAll('.nav-link');
+//Subcategory Variables and Const
+const subNav = document.querySelector('#subNav');
+const subCategories = subNav.querySelectorAll('.nav-item');
+console.log(subCategories)
+const subButtons = subNav.querySelectorAll('.nav-link')
+console.log(subButtons)
+//Recipe Variables and Const
 
-const categorySelector = document.querySelector('#categoryNav');
-const catButtons = categorySelector.querySelectorAll('.nav-link');
+const recipeNav = document.querySelector('#recipeNav');
+const recipeGroups = recipeNav.querySelectorAll('.nav');
+const recipeButtons = recipeNav.querySelectorAll('.nav-link');
 
-const recipeSelector = document.querySelector('#recipeSelector');
-const recipeButtons = recipeSelector.querySelectorAll('.nav-link');
-function hideAll() {
-  const navs = recipeSelector.querySelectorAll('.nav');
-  navs.forEach(btn => {
-    btn.hidden = true;
+//Functions
+
+/* hideAll
+  this functions hides all items from the parameter
+*/
+function hideAll(groups) {
+  groups.forEach(group => {
+    group.hidden = true;
   });
 
 };
 
 
-hideAll();
+function hideRecepies(group) {
+  // console.log(group);
+  let helper = document.getElementById(group);
+  helper.hidden = true;
+  // console.log('after true')
 
+};
+
+function showRecepies(group) {
+  let recipes = document.getElementById(group);
+  recipes.hidden = false;
+};
+
+hideAll(recipeGroups);
+
+//Click on Main Categories
 catButtons.forEach(btn => {
   btn.addEventListener('click', function () {
-    activeCategory = btn.value;
-    // console.log(btn.value);
+    if (btn.value !== activeCategory) {
+      hideRecepies(lastSelection);
+      activeCategory = btn.value;
+      showRecepies(activeCategory + subCat);
+      lastSelection = activeCategory + subCat
+
+    }
+    console.log(btn.value);
   });
 });
 
-const selectionNav = document.querySelector('#selectionNav');
-const elements = selectionNav.querySelectorAll('.nav-item');
-console.log(elements)
-const buttons = selectionNav.querySelectorAll('.nav-link')
-console.log(buttons)
-
 // Click on Subcategory
-function hideRecepies(hide) {
-  console.log(hide);
-  let helper = document.getElementById(hide);
-  helper.hidden = true;
-  console.log('after true')
-
-
-};
-
-buttons.forEach(btn => {
+subButtons.forEach(btn => {
   btn.addEventListener('click', function () {
-    // console.log(btn.value);
-    console.log("sub click");
+    console.log(btn.value);
     hideRecepies(lastSelection);
     subCat = btn.value;
     const activate = activeCategory + subCat;
     console.log(activate);
-    let helper = document.getElementById(activate);
-    helper.hidden = false;
+    showRecepies(activate);
     lastSelection = activate;
   })
 });
@@ -72,13 +91,21 @@ buttons.forEach(btn => {
 function changeIframe(cat, subCat, value) {
   console.log(cat)
   const path = "./Recipes/" + cat + "/" + subCat + "/" + value;
-  console.log(path);
 
   recipeIframe.src = path;
 }
 
 recipeButtons.forEach(btn => {
   btn.addEventListener('click', function () {
-    changeIframe(activeCategory, subCat, btn.value);
+    if (lastRecipeButton !== btn) {
+      if (lastRecipeButton !== null) {
+        console.log("deactivate button")
+        lastRecipeButton.classList.remove('active');
+      }
+
+      changeIframe(activeCategory, subCat, btn.value);
+      lastRecipeButton = btn;
+    }
+
   });
 });

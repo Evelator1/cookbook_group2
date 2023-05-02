@@ -6,22 +6,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="style.css">
-  <!-- Bootstrap -->
   <link rel="stylesheet" href="./css/bootstrap.css">
 </head>
 
 <body>
-  <div class="container container-fluid vh-100 p-0 overflow-hidden">
-    <!-- Main Frame -->
-    <div class="row h-100 m-0" id="mainFrame">
+  <div class="container-fluid vh-100 p-0 overflow-hidden">
+    <div class="row h-100 m-0">
       <!-- Left Side -->
       <div class="col-4 bg-body-secondary">
         <!-- Logo Part -->
-        <div class="row p-5">
-          <h1 class="display-2">logo</h1>
+        <div class="row p-5 ">
+          <h1>logo</h1>
         </div>
-        <!-- Nav Pills for the Main Categories -->
+        <!-- Pills for Categories -->
         <div class="row bg-dark">
           <ul class="nav nav-pills navbar-dark m-3 justify-content-around" id="categoryNav" role="tablist">
             <li class="nav-item" role="presentation">
@@ -38,11 +35,11 @@
             </li>
           </ul>
         </div>
-        <!-- Slection Area for Subcategories and Recipes -->
+        <!-- Selection Area -->
         <div class="row">
           <!-- Left Side Subcategories-->
-          <div class="col-6 my-5 border">
-            <ul class="nav nav-pills flex-column border-dark" role="tablist" id="selectionNav">
+          <div class="col-6 my-5">
+            <ul class="nav nav-pills flex-column border-dark" role="tablist" id="subNav">
               <li class="nav-item my-3" role="presentation">
                 <button class="nav-link active" value="soup" data-bs-toggle="pill" role="tab"
                   type="button">Soup</button>
@@ -61,8 +58,8 @@
               </li>
             </ul>
           </div>
-          <!-- Right Side Recipes List -->
-          <div class="col-6 my-5" id="recipeSelector">
+          <!-- Right Side -->
+          <div class="col-6 my-5" id="recipeNav">
             <ul class="nav flex-column" id="meatsoup">
             </ul>
             <ul class="nav flex-column" id="meatsalads">
@@ -104,15 +101,23 @@
           </div>
         </div>
       </div>
-      <!-- Right Side for content -->
-      <div class="col-8 bg-primary">
-        <div class="row h-100 m-0 py-3 content">
-          <iframe class="p-0" id="recipeIframe" src=""></iframe>
+      <!-- Right Side -->
+      <div class="col-8 p-0">
+        <!-- <div class="row m-0">
+          <ul class="list-group flex-row gap-3 ">
+            <li class="list-group-item">item1</li>
+            <li class="list-group-item">item2</li>
+            <li class="list-group-item">item3</li>
+            <li class="list-group-item">item4</li>
+            <li class="list-group-item">item</li>
+            <li class="list-group-item">item</li>
+          </ul>
+        </div> -->
+        <div class="row h-100 m-0 p-0">
+          <iframe class="p-0" src="" frameborder="0" id="recipeIframe"></iframe>
         </div>
       </div>
     </div>
-  </div>
-  </div>
   </div>
   <script src="./js/bootstrap.js"></script>
   <script src="./js/index.js"></script>
